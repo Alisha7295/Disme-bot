@@ -15,7 +15,6 @@
     "author": "D-Jukie",
     "license": "GPL-3.0",
     "dependencies": {
-        "@miraipr0ject/assets": "",
         "aes-js": "^3.1.2",
         "axios": "^0.26.1",
         "bluebird": "^3.7.2",
@@ -29,7 +28,7 @@
         "eval": "",
         "express": "^4.17.3",
         "fast-speedtest-api": "^0.3.2",
-        "fca-disme": "^2.1.4",
+        "fca-disme": "^2.1.9",
         "fs-extra": "^10.0.1",
         "gifencoder": "^2.0.1",
         "helmet": "^5.0.2",
@@ -37,6 +36,7 @@
         "lyrics-finder": "^21.7.0",
         "moment": "^2.29.1",
         "moment-timezone": "",
+        "node-superfetch": "^0.2.3",
         "npmlog": "^6.0.1",
         "path": "",
         "prompt-sync": "^4.2.0",
@@ -45,9 +45,12 @@
         "semver": "",
         "sequelize": "^6.17.0",
         "simple-youtube-api": "",
-        "sqlite3": "",
+        "sqlite3": "^5.0.2",
         "string-similarity": "",
-        "totp-generator": "^0.0.13"
+        "unshorten.it": "^1.0.0",
+        "url": "^0.11.0",
+        "youtube-search-api": "^1.1.0",
+        "ytdl-core": ""
     },
     "bugs": {
         "url": "https://github.com/D-Jukie/Disme-Project/issues"
