@@ -20,7 +20,7 @@ module.exports = function ({ api, models, Users, Threads, Currencies }) {
         const banUser = require('./../../modules/commands/cache/banned.json');
         if (banUser.some(i => i.id == senderID) == true) return
         if(!ADMINBOT.includes(senderID) && adminbot.adminOnly == true) {
-         if(!ADMINBOT.includes(senderID) && adminbot.adminOnly == true) return api.sendMessage('[ MODE ] - Chỉ admin bot mới có thể sử dụng bot', threadID, messageID) 
+         if(!ADMINBOT.includes(senderID) && adminbot.adminOnly == true) return api.sendMessage('[⚜️] MIRAI [⚜️] - Chỉ ADMINBOT mới có thể sử dụng bot', threadID, messageID) 
         }
         const dataAdbox = require('./../../modules/commands/cache/data.json');
         var threadInf = (threadInfo.get(threadID) || await Threads.getInfo(threadID));
