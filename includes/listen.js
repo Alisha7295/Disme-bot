@@ -2,7 +2,7 @@ module.exports = function({ api, models }) {
 
 	const Users = require("./controllers/users")({ models, api }),
 				Threads = require("./controllers/threads")({ models, api }),
-				Currencies = require("./controllers/currencies")({ models });
+				Currencies = require("./controllers/currencies")({ models })
 	const logger = require("../utils/log.js");
 	const fs = require("fs");
 	const moment = require('moment-timezone');

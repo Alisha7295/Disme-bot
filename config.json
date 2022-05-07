@@ -1,6 +1,6 @@
 {
     "language": "vi",
-    "keyActive": "ct31tSL0dt",
+    "keyActive": "",
     "DeveloperMode": true,
     "autoCreateDB": true,
     "allowInbox": true,
@@ -8,6 +8,7 @@
     "adminOnly": false,
     "encryptSt": false,
     "UPTIME": 0,
+    "DASHBOARD": false,
     "commandDisabled": [],
     "eventDisabled": [],
     "EMAIL": "",
@@ -28,7 +29,7 @@
         "pauseLog": true,
         "logLevel": "silent",
         "selfListen": true,
-        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Safari/537.36"
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:87.0) Gecko/20100101 Firefox/87.0"
     },
-    "version": "1.0.0"
+    "version": "1.0.3"
 }
